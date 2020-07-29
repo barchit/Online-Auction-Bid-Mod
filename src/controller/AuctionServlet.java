@@ -18,7 +18,7 @@ import model.Onlineauctiondatabase;
 public class AuctionServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	
- Online_auctionDao online_auctionDao= new Online_auctionDao();
+       Online_auctionDao online_auctionDao= new Online_auctionDao();
        
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -46,7 +46,7 @@ public class AuctionServlet extends HttpServlet {
 		 request.setAttribute("item_n", item_name);
 		 request.setAttribute("n", name);
 		 request.setAttribute("email",email_address);
-	     request.setAttribute("amt", amount_bid);
+	         request.setAttribute("amt", amount_bid);
 		 request.setAttribute("auto",auto_increment);
 		 
 		 RequestDispatcher rd= request.getRequestDispatcher("detail.jsp");
